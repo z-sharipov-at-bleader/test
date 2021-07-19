@@ -132,6 +132,7 @@
             <div>
               <div class="caption">
                 <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
+                <h5>{{ entry_product_alt_name }} {{ product.alt_name }}</h5>
                 <p>{{ product.description }}</p>
                 {% if product.price %}
                 <p class="price"> {% if not product.special %}

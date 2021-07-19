@@ -97,6 +97,7 @@ class ControllerProductCategory extends Controller {
 			$data['heading_title'] = $category_info['name'];
 
 			$data['text_compare'] = sprintf($this->language->get('text_compare'), (isset($this->session->data['compare']) ? count($this->session->data['compare']) : 0));
+			$data['entry_product_alt_name'] = $this->language->get('entry_product_alt_name');
 
 			// Set the last category breadcrumb
 			$data['breadcrumbs'][] = array(
@@ -197,6 +198,7 @@ class ControllerProductCategory extends Controller {
 					'product_id'  => $result['product_id'],
 					'thumb'       => $image,
 					'name'        => $result['name'],
+					'alt_name'    => 'Some alternative name of product',
 					'description' => utf8_substr(trim(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8'))), 0, $this->config->get('theme_' . $this->config->get('config_theme') . '_product_description_length')) . '..',
 					'price'       => $price,
 					'special'     => $special,

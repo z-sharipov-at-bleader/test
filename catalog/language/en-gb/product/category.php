@@ -22,3 +22,6 @@ $_['text_rating_desc']  = 'Rating (Highest)';
 $_['text_model_asc']    = 'Model (A - Z)';
 $_['text_model_desc']   = 'Model (Z - A)';
 $_['text_limit']        = 'Show:';
+
+// Entry
+$_['entry_product_alt_name'] = 'Product alternative name:';
